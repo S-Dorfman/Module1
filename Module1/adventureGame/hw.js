@@ -2,19 +2,24 @@
 class Governor {
     //static methods and properties 
     //log and test don't instatiate ???
-    title = "Governor";
-    location = "Capital_Office";
-    outfit = "suit";
+    static title = "Governor";
+    static location = "Capital_Office";
+    static outfit = "suit";
 
 
-    governing() {
+    static governing() {
         console.log(`${this.title} is working at the ${this.location}`);
     }
+
 }
 
 //how to call static method??.governing();
+console.log(Governor.title);
 
+// let brad = new Governor("Governor", "Albany", "Blue_suit");
+// console.log(brad);
 
+Governor.governing();
 
 //Parent class
 class Person {
