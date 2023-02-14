@@ -103,7 +103,6 @@ while (integer < 100){
 // All numbers divisible by 2 should be multiplied by 3 before they are output. 
 // All other integers should not be output.
 
-// ???
 let number = 0;
 
 while (number <= 20){

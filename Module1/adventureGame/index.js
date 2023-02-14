@@ -37,7 +37,6 @@ class Player {
     }
 
     
-
     //setter method update values in class
     setHair(newHairColor) {
         this.#hair = newHairColor;

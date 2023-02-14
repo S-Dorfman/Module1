@@ -32,15 +32,16 @@ class Cat {
 
     }
 
+    //setter method update values in class
+    //update treats
+    setTreats(newNumTreats) {
+        this.treats = newNumTreats;
+    }
+    
+
 }
 
-//setter method update values in class
-//update treats
-// setHair(newHairColor) {
-//     this.#hair = newHairColor;
-// }
 
-//mario.setHair("red");
 
 const amber = new Cat("Amber", "orange", "tabby");
 const kyte = new Cat("Kyte","white", "Maine_coon");
@@ -56,6 +57,9 @@ amber.hunt("amber");
 kyte.hunt("kyte");
 
 amber.eatTreat(5);
+
+
+amber.setTreats(45);
 
 //child class
 class Mouse extends Cat {
