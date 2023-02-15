@@ -40,24 +40,24 @@ const a = 4;
 
 
 // D. The Farm
-let animal = "cow"; 
-animal = "cat";
+// let animal = "cow"; 
+// animal = "cat";
 
-if (animal === "duck") {
-    console.log("Quack");
-}   else {
-    console.log("Hey! You're not a duck!");
-}
+// if (animal === "duck") {
+//     console.log("Quack");
+// }   else {
+//     console.log("Hey! You're not a duck!");
+// }
 
 // E. Driver's Ed
 
-const age = 16;
+// const age = 16;
 
-if(age >= 16) {
-    console.log("Here are the keys!");
-} else if (age < 16) {
-    console.log("Sorry, you're too young.");
-} 
+// if(age >= 16) {
+//     console.log("Here are the keys!");
+// } else if (age < 16) {
+//     console.log("Sorry, you're too young.");
+// } 
 
 //_____________________________________________________________
 
@@ -220,38 +220,159 @@ const kristynsCloset = [
     ]
   ];
 
+// console.log(`Krystyn is rocking that ${kristynsCloset[3]} today`);
+// kristynsCloset.splice(6, 0, "raybans"); 
+// kristynsCloset[5] = "stained knit hat";
+
+// console.log(kristynsCloset);
+
+// console.log(`Thom is looking smart in a ${thomsCloset[0][0]}, ${thomsCloset[1][0]} and ${thomsCloset[2][2]}.`);
+// thomsCloset[1][2] = "Footie Pajamas";
+// console.log(thomsCloset);
 
 //_____________________________________________________________
-
-
-
-
-
 
 
 
 // IV. Functions
-// A.
+
+// A. 
 // B.
+// function printCool(name) {
+//   console.log(`${name} is cool`);
+// }
+
+//  printCool("Captain Reynolds"); 
+
 // C.
+
+// function calculateCube(a) {
+//   return a * a * a;
+// }
+// console.log(calculateCube(5));
+
 // D.
+
+// function isVowel(x) {
+//   x = x.toUpperCase()
+//   if (x === "A" || x === "E"  || x === "I"  || x === "O"  || x === "U"){
+//     console.log(true);
+// } else {
+//   console.log(false);
+// }  
+// }
+
+// isVowel("o");
+
 // E.
-// F.
-// G.
-// H.
+// function getTwoLengths([a,b]) {
+//   console.log([a.length, b.length]);
+// }
+
+// getTwoLengths(["string1", "string223344"]);  //7,12
+
+//  F.  //gets length of each string in array
+
+function getMultipleLengths(arr) {
+  let arrayOfNumbers = [];               //*new array to store strings
+
+  for (let i = 0; i < arr.length; i++) {              
+     arrayOfNumbers.push(arr[i].length)     //*push elements to array
+    }
+  return arrayOfNumbers;
+}
+
+// console.log(getMultipleLengths(["we", "went", "to", "the", "mall"]));
+ //2,4,2,3,4
+
+// G. //
+function maxOfThree(a,b,c) {
+  if (a === b && a === c && b === c) {
+    return a;
+  } else if (a >= b && a >= c){
+    return a;
+  } else if (b >= a && b >= c) {
+    return b;
+  } else if (c >= a && c >= b) {
+    return c;
+  } 
+
+}
+
+// console.log(maxOfThree(25, 35, 35));  //returns largest #
+
+
+
+
+// H. //! //print longest word in array, if tie return first 
+
+function printLongestWord([]) {
+  
+}
+
+console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"])); //return longest string -Peanut Butter
+
 //_____________________________________________________________
 
 
-
-
-
-
 // V. Objects
-// A.
+
+// A. //user object
+
+const user = {
+  name: "Joan",
+  email: "Joan84@gmail.com",
+  age: 53,
+  purchased: [],
+}
+
 // B.
+
+user.email = "Joansmith@yahoo.com"
+user.age++
+
+console.log(user);
+
 // C.
+user.location = "Canada"
+
 // D.
+
+user.purchased.push(["carbohydrates", "peace of mind", "Merino jodhpurs"])
+
+console.log(user.purchased[0][2]); 
+
 // E.
-// F.
+user.friend = {
+  name: "Deb",
+  age: 56,
+  location: "Toronto",
+  purchased: [],
+}
+
+// console.log(user.friend.name);
+// console.log(user.friend.location);
+
+user.friend.age = 55; 
+user.friend.purchased.push(["The One Ring"]);
+user.friend.purchased.push(["A Latte"]);
+
+// console.log(user.friend);
+// console.log(user.friend.purchased[1]);
+
+
+// F.  //loop print elements to console
+for (let i = 0; i < user.purchased.length; i++) {
+  console.log(user.purchased[i]);  
+}
+
+for (let i = 0; i < user.friend.purchased.length; i++) {
+  console.log(user.friend.purchased[i]); 
+}
+
+
+
+
 // G.
+
 //_____________________________________________________________

@@ -1,4 +1,3 @@
-console.log('Adventure Game!');
 
 //Declare a new class
 class Player {
@@ -20,20 +19,20 @@ class Player {
 
         //instance method- function living in class
     greet(otherCharacter = "friend") {
-        console.log(`Hello ${otherCharacter}`);
+        // console.log(`Hello ${otherCharacter}`);
     }
 
     
     attack() {
-        console.log(`${this.name} is attacking`);
+        // console.log(`${this.name} is attacking`);
     }
 
 
     //damage function 
     takeDamage(damageLevel) {
         this.health -= damageLevel;
-        console.log(`${this.name} now has a 
-        health level of: ${this.health}`);
+        // console.log(`${this.name} now has a 
+        // health level of: ${this.health}`);
     }
 
     
@@ -44,7 +43,7 @@ class Player {
 
     //getter method
     getHair() {
-        console.log(this.#hair);
+        // console.log(this.#hair);
     }
 }
 
@@ -82,10 +81,10 @@ class Friend extends Player {
      }
 
     fly() {
-        console.log(`${this.name} is flying..`);
+        // console.log(`${this.name} is flying..`);
     }
     attack() {
-        console.log(`Fireball!!`);
+    //     console.log(`Fireball!!`);
     }
     doubleAttack() {
         super.attack(); //calling attack method from parent/super class
@@ -100,18 +99,18 @@ class Enemy extends Player {
 const toad = new Friend("Toad", 18, "mushroom", "builder", "jumper", "runner");
 const bowser = new Enemy("Bowser", 38, "red");
 
-console.log(mario);
-console.log(luigi);
-console.log(toad);
-console.log(bowser);
-toad.doubleAttack();
+// console.log(mario);
+// console.log(luigi);
+// console.log(toad);
+// console.log(bowser);
+// toad.doubleAttack();
 
 // mario.attack()
 // toad.fly()
 // toad.attack()
 
 const randomNum = Math.floor(Math.random() * 2)
-console.log(randomNum);
+// console.log(randomNum);
 
 if (randomNum < 1) {
     bowser.takeDamage(mario.damage)
