@@ -60,14 +60,33 @@ wolfy.unshift("Gameboy")
 const ninjaTurtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo']
 
 for (const element of ninjaTurtles) {
-    console.log(element.toUpperCase()); 
+    // console.log(element.toUpperCase()); 
 }
 
 ////////////////////////////////
 // Methods, Revisited
 ////////////////////////////////
 
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 
+'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 
+'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 
+'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver',
+ 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 
+ 'Imitation of Life', 'Snatch', 'Fast and Furious'];
 
+console.log(favMovies[8]);
+// console.log(favMovies.sort());
+favMovies.pop();
+favMovies.push("Guadians of the Galaxy");
+favMovies.reverse()
+favMovies.shift()
+favMovies.unshift("Star Wars")
+favMovies.splice(15, 1, "Avatar")
+
+const partTwoMovies = favMovies.slice(9, 19);
+console.log(partTwoMovies);
+console.log(favMovies);
+console.log(favMovies[18]);
 ////////////////////////////////
 // Where is Waldo
 ////////////////////////////////
