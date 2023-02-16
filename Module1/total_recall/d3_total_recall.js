@@ -45,7 +45,6 @@ class Hamster {
     eat(){
         this.weight++
         this.mood++
-
     }
     
     exercise(){
@@ -64,3 +63,28 @@ class Hamster {
       this.bankAccount-=hamster.getPrice()
     }
   }
+
+  const timmy = new Person("Timmy"); 
+  //age timmy 5 years
+  timmy.age+=5
+  //run eat method 5X
+  for (let i = 0; i < 5; i++) {
+    timmy.eat() 
+  }
+  //run exercise method 5X
+  for (let i = 0; i < 5; i++) {
+    timmy.exercise() 
+  }
+
+  //age timmy 9 years
+  timmy.age+=9
+  console.log(timmy);
+  const gus = new Hamster('Gus');
+  gus.owner = "Timmy"
+  timmy.buyHamster(gus)
+  timmy.age+=15
+  timmy.eat()
+  timmy.eat()
+  timmy.exercise()
+  timmy.exercise()
+  console.log(gus);
