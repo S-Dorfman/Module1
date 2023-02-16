@@ -373,7 +373,7 @@ for (let i = 0; i < user.friend.purchased.length; i++) {
 
 
 
-// G. //function updateUser, increment age by 1, uppercase 
+//  !G. function updateUser, increment age by 1, uppercase 
 
 
 
