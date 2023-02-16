@@ -90,7 +90,7 @@ const adventurer = {
 //
 
 for (let i = 0; i < adventurer.belongings.length; i++) {
-    // console.log(adventurer.belongings[i]);
+    console.log(adventurer.belongings[i]);
 }
 
 for (item of adventurer.belongings) {

@@ -347,21 +347,21 @@ user.friend = {
   name: "Deb",
   age: 56,
   location: "Toronto",
-  purchased: [],
+  purchased: []
 }
 
 // console.log(user.friend.name);
 // console.log(user.friend.location);
 
 user.friend.age = 55; 
-user.friend.purchased.push(["The One Ring"]);
-user.friend.purchased.push(["A Latte"]);
+user.friend.purchased.push(['The One Ring'])
+user.friend.purchased.push(['A Latte'])
 
 // console.log(user.friend);
 // console.log(user.friend.purchased[1]);
 
 
-// F.  //loop print elements to console
+//! F.  loop print elements to console 
 for (let i = 0; i < user.purchased.length; i++) {
   console.log(user.purchased[i]);  
 }
@@ -373,6 +373,9 @@ for (let i = 0; i < user.friend.purchased.length; i++) {
 
 
 
-// G.
+// G. //function updateUser, increment age by 1, uppercase 
+
+
+
 
 //_____________________________________________________________
