@@ -390,8 +390,14 @@ user.friend.purchased.push(['A Latte'])
 
 //! F.  loop print elements to console 
 for (let i = 0; i < user.purchased.length; i++) {
-  console.log(user.purchased[i]);  
+    console.log(user.purchased[i]);  
+  
 }
+
+// array.forEach(element => {
+  
+// });
+
 
 for (let i = 0; i < user.friend.purchased.length; i++) {
   console.log(user.friend.purchased[i]); 
