@@ -256,13 +256,28 @@ const kristynsCloset = [
 // function isVowel(x) {
 //   x = x.toUpperCase()
 //   if (x === "A" || x === "E"  || x === "I"  || x === "O"  || x === "U"){
-//     console.log(true);
+//     return true;
 // } else {
-//   console.log(false);
+//   return false;
 // }  
 // }
+// console.log(isVowel("i"));
 
-// isVowel("o");
+
+//! D. Different method, more efficient function need to fix
+// function isVowel(letters){
+//   let vowels = ["a", "e", "i", "o", "u"]
+//   for (let i = 0; i < vowels.length; i++) {
+//     console.log(i);
+//     if(letters !== vowels[i]){
+//       return false;
+//     } else{
+//       return true;
+//     }
+    
+//   }
+// }
+// console.log(isVowel("i"));
 
 // E.
 // function getTwoLengths([a,b]) {
@@ -304,10 +319,22 @@ function maxOfThree(a,b,c) {
 
 
 
-// H. //! //print longest word in array, if tie return first 
+// H. print longest word in array, if tie return first 
 
-function printLongestWord([]) {
-  
+function printLongestWord(arg) {
+  let longestWord = arg[0]
+  let longestWordLength = arg[0].length
+  console.log(longestWord);
+  arg.forEach(currentElement => {
+    previousLength = longestWordLength
+    // console.log(previousLength);
+    // console.log(longestWord);
+    longestWordLength = Math.max(longestWord.length, currentElement.length)
+    if (previousLength !== longestWordLength) {
+        longestWord = currentElement      
+    }
+  });
+  return longestWord
 }
 
 console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"])); //return longest string -Peanut Butter
@@ -373,8 +400,27 @@ for (let i = 0; i < user.friend.purchased.length; i++) {
 
 
 
-//  !G. function updateUser, increment age by 1, uppercase 
+//  G. function updateUser, increment age by 1, uppercase 
 
+function updateUser() {
+  user.age = user.age++
+  user.name = user.name.toUpperCase()
+}
+
+// updateUser(user); 
+// console.log(user.name);
+// console.log(user.age);
+
+
+//function old and loud 
+function oldAndLoud(person) {
+  person.age+=5
+  person.name = person.name.toUpperCase()
+}
+
+// oldAndLoud(user); 
+// console.log(user.name);
+// console.log(user.age);
 
 
 

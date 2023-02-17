@@ -107,22 +107,22 @@ for (let i = 0; i <= 200; i++) {
 //code logs "Love me, pet me! HSSSSSS!" 20 times
 //for every even number log element of kitty says at random
 
-////?
+//! set variable 
 const kittySays = ['human why you taking pictures of me', 'the catnip made me do it', 'why does the red dot always get away']
 
 // let meow = 0;
 // kittySays[meow]
 
-// for (let i = 1; i <= 20; i++) {
+for (let i = 1; i <= 20; i++) {
     
-//     if (i % 2 === 0){
-//         console.log(kittySays[Math.floor((Math.random() * kittySays.length))]);
-//     } 
-//     else {
-//         console.log(`${i} Love me, pet me! HSSSSSS!`);
-//     }
-// }
-////////////////////////////////
+    if (i % 2 === 0){
+        console.log(kittySays[Math.floor((Math.random() * kittySays.length))]);
+    } 
+    else {
+        console.log(`${i} Love me, pet me! HSSSSSS!`);
+    }
+}
+//////////////////////////////
 //  Find the Median
 ////////////////////////////////
 
