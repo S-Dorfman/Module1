@@ -9,7 +9,6 @@ export class Node {
 }
 
 //LinkedList class
-
 export class LinkedList {
     constructor(){
         this.head = null;

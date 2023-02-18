@@ -56,7 +56,7 @@ const div = new ElementNode("div");
 div.setTextContent("Hello element node");
 console.log(div);
 
-// test
+//* test 
 const p = document.createElement("p");
 p.textContent = "Hello World";
-console.log(p);
+console.dir(p);
