@@ -350,7 +350,7 @@ const user = {
   name: "Joan",
   email: "Joan84@gmail.com",
   age: 53,
-  purchased: [],
+  purchased: []
 }
 
 // B.
@@ -388,23 +388,19 @@ user.friend.purchased.push(['A Latte'])
 // console.log(user.friend.purchased[1]);
 
 
-//! F.  loop print elements to console 
+// F.  loop print array elements to console 
 for (let i = 0; i < user.purchased.length; i++) {
     console.log(user.purchased[i]);   
 }
 
 //for each loop
-user.purchased.forEach(i =>  console.log(i));
+user.purchased.forEach(element =>  console.log(element));
   
 
 
 for (let i = 0; i < user.friend.purchased.length; i++) {
   console.log(user.friend.purchased[i]); 
 }
-
-
-
-
 //  G. function updateUser, increment age by 1, uppercase 
 
 function updateUser() {
