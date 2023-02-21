@@ -83,3 +83,26 @@ console.log(allLis);
 //create a regular array from a collection of values 
 const arrayOfLis = Array.from(allLis);
 console.log(arrayOfLis);
+
+// ============== Create an Element and add attributes ========
+
+//create a new element 
+
+const btn = document.createElement('button');
+btn.textContent = 'Click Me!'
+//set an attribute on an element
+btn.setAttribute('class', "selected") 
+console.log(btn);
+
+//add button to the DOM
+const body = document.querySelector('body')
+body.appendChild(btn)
+console.log(body);
+
+//get an attribute from an element 
+const att = titleEl.getAttribute('id')
+console.log(att); 
+
+//check if an element contains an attribute - returns  boolean 
+console.log(titleEl.hasAttribute('class'));
+
