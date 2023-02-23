@@ -66,7 +66,7 @@ subMenuEl.style.top = 0;
 const topMenuLinks = document.querySelectorAll('A');
 //Declare a global showingSubMenu variable and initialize it to false
 let showingSubMenu = false; 
-
+//Task 5.2
 //Attach a delegated 'click' event listener to topMenuEl. 
 topMenuEl.addEventListener('click', function(event) {
   //call the event object's preventDefault()method.
@@ -78,6 +78,7 @@ topMenuEl.addEventListener('click', function(event) {
   console.log(event);
   //console.log the content of the <a>to verify the handler is working.
   console.log(event.target.text);
+  //Task 5.3 ///?
   // if the clicked <a>link has a class of active:
   if (event.target.classList === 'active'){
     // Remove the activeclass from the clicked <a>element.
