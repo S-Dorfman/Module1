@@ -1,0 +1,23 @@
+
+h2 {
+    background-color: royalblue;
+    padding: 5px;
+}
+div {
+    background-color: palevioletred;
+    padding: 10px;
+    color: #fff;
+}
+
+/* classes to style change when li is selected */
+.selected {
+    background-color: green;
+    font-family: monospace;
+    font-size: 18px;
+}
+
+.removed {
+    background-color: red;
+    font-family: monospace;
+    font-size: 18px;
+}

@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+body{
+ background-image:url("https://garden.spoonflower.com/c/11954382/p/f/m/vzZTwTNLuL0oGnrCztCCkC0i70eAx8m0uSdNKGYuuA2OijLIwcS3M8Nksw/SWEET%20TOOTH%20-%20CUPCAKES.jpgh");
+ font-family: 'Mukta', sans-serif;
+ letter-spacing: 1px;
+ display: flex;
+ justify-content: center;
+ color:#095857;
+}
+
+main{
+ width: 80%;
+ margin-top: 20px;
+ background-color:#FDEBED;
+ text-align: center;
+ font-family: 'Mukta', sans-serif;
+ list-style-position: inside;
+ border: 20px solid #AAE3E2;
+ border-radius: 20px;
+ 
+}
+
+h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 2em;    
+}
+
+h2{
+    padding-top: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.image{
+    display:flex;
+    justify-content: center;
+ }
+ 
+ img{ 
+     border-radius: 50%;
+     border:6px solid #AAE3E2;
+ }
+
+ ul{
+     list-style: none;
+    padding-bottom: 15px;
+ }
+ ol{ 
+     /* text-align:left; */
+     padding-bottom: 15px;
+ }
+ 
+ .ingredients-div{ 
+     background-color:#FFCEFE;
+     border:4px solid #FDEBED;
+     border-radius: 25px;
+     
+ }
+ .instructions-div{
+     background-color:#FFCEFE;
+     border:6px solid #FDEBED;
+     border-radius: 25px;
+ }
+ 

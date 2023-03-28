@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 50px 1fr 30px;
+    height: 100vh;
+
+}
+
+aside {
+    background-color: #a2b4da;
+  }
+  
+  main {
+    background-color: #f3dba8;
+  }
+  
+  footer {
+    background-color: #a2cbb6;
+  }
+
+  .flex-ctr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* shorthand grid-column start & end */
+nav, footer {
+    grid-column: 1/3;
+}
+
+
+/* Parent element-make it flex container-divs become flex items*/
+nav {
+    display: flex;
+    flex-direction: row;
+    /* controls main axis left, right, center, space-around, space-between, space-evenly*/
+    justify-content: flex-start;
+    /* controls main cross-axis */
+    align-items: center;
+    height: 50px;
+    background-color: #a2cbb6;    
+}
+/* > css selector targets children of nav (div)*/
+nav > div {
+    margin: 10px;
+    font-size: 20px;
+    color: #f3dba8;
+}
+
+/* section > div {
+    margin: 10px;
+} */
+
+nav > div:nth-child(5) {
+    margin-left: auto;
+}
+/* section {
+    background-color: dodgerblue;
+}
+
+.one {
+    background-color: #645CBB;
+    /* flex-grow: 2; */
+    /* flex-shrink: 5; */
+    /* flex-basis: 1; */
+
+/* } */
+
+/* .two {
+    background-color: #A084DC;
+} */ 
+
+/* .three{
+    background-color: #BFACE2;
+}
+
+.four {
+    background-color: #EBC7E6;
+}
+.five {
+    background-color: #00425A;
+}
+.six {
+    background-color: #5B8FB9;
+}
+.seven {
+    background-color: #84D2C5;
+}
+.eight {
+    background-color: #FF8B13;
+}
+.nine {
+    background-color: #1F8A70;
+} */
+/* .ten {
+    background-color: #F55050;
+}
+
+section > div {
+    width: 50px;
+    text-align: center;
+    padding:5px;
+    font-size: 32px;
+    
+}
+section {
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+
+} */
